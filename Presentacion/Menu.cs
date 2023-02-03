@@ -12,6 +12,9 @@ namespace Presentacion
 {
     public partial class Menu : Form
     {
+        public int idUsuario;
+
+
         public Menu()
         {
             InitializeComponent();
@@ -28,7 +31,7 @@ namespace Presentacion
             {
                 int xbuscar = login.intIdUsux;
                 string xbuscarn = login.strNoUsux;
-                //idUsuario = xbuscar;
+                idUsuario = xbuscar;
                 //usuarioConect = xbuscarn;
 
                 //this.WindowState = FormWindowState.Normal;
@@ -43,12 +46,16 @@ namespace Presentacion
 
         private void btnStaAnita_Click(object sender, EventArgs e)
         {
-
+            Visor_StaAnita frm = new Visor_StaAnita();
+            frm.intIdUsu = idUsuario;
+            frm.Show();
         }
 
         private void btnCallao_Click(object sender, EventArgs e)
         {
-
+            Visor_Callao frm = new Visor_Callao();
+            frm.intIdUsu = idUsuario;
+            frm.Show();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

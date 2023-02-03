@@ -43,17 +43,19 @@
             this.groupBox1.Controls.Add(this.btnCallao);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(628, 168);
+            this.groupBox1.Size = new System.Drawing.Size(605, 157);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(447, 47);
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(406, 42);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(175, 71);
             this.btnSalir.TabIndex = 0;
-            this.btnSalir.Text = "SALIR";
+            this.btnSalir.Text = "             SALIR";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
@@ -61,7 +63,7 @@
             // 
             this.btnStaAnita.Image = ((System.Drawing.Image)(resources.GetObject("btnStaAnita.Image")));
             this.btnStaAnita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStaAnita.Location = new System.Drawing.Point(24, 47);
+            this.btnStaAnita.Location = new System.Drawing.Point(20, 42);
             this.btnStaAnita.Name = "btnStaAnita";
             this.btnStaAnita.Size = new System.Drawing.Size(175, 71);
             this.btnStaAnita.TabIndex = 0;
@@ -74,7 +76,7 @@
             // 
             this.btnCallao.Image = ((System.Drawing.Image)(resources.GetObject("btnCallao.Image")));
             this.btnCallao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCallao.Location = new System.Drawing.Point(216, 47);
+            this.btnCallao.Location = new System.Drawing.Point(212, 42);
             this.btnCallao.Name = "btnCallao";
             this.btnCallao.Size = new System.Drawing.Size(175, 71);
             this.btnCallao.TabIndex = 0;
@@ -87,12 +89,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 197);
+            this.ClientSize = new System.Drawing.Size(636, 180);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "VISOR DE ASISTENCIA";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -54,8 +54,6 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.rbCallao = new System.Windows.Forms.RadioButton();
-            this.rbSantaAnita = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,16 +63,6 @@
             this.btnCopiarDatos = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dgvListado = new System.Windows.Forms.DataGridView();
-            this.intIdMarcacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.strNoUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.intCoUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dttFeMarcacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dgvListaSantaAnita = new System.Windows.Forms.DataGridView();
@@ -92,9 +80,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.binNvgListado)).BeginInit();
             this.binNvgListado.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
-            this.panel6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSantaAnita)).BeginInit();
@@ -315,8 +300,6 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.rbCallao);
-            this.panel4.Controls.Add(this.rbSantaAnita);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label1);
@@ -331,30 +314,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(706, 96);
             this.panel4.TabIndex = 13;
-            // 
-            // rbCallao
-            // 
-            this.rbCallao.AutoSize = true;
-            this.rbCallao.Location = new System.Drawing.Point(253, 62);
-            this.rbCallao.Name = "rbCallao";
-            this.rbCallao.Size = new System.Drawing.Size(54, 17);
-            this.rbCallao.TabIndex = 4;
-            this.rbCallao.TabStop = true;
-            this.rbCallao.Text = "Callao";
-            this.rbCallao.UseVisualStyleBackColor = true;
-            this.rbCallao.CheckedChanged += new System.EventHandler(this.rbCallao_CheckedChanged);
-            // 
-            // rbSantaAnita
-            // 
-            this.rbSantaAnita.AutoSize = true;
-            this.rbSantaAnita.Location = new System.Drawing.Point(253, 25);
-            this.rbSantaAnita.Name = "rbSantaAnita";
-            this.rbSantaAnita.Size = new System.Drawing.Size(80, 17);
-            this.rbSantaAnita.TabIndex = 4;
-            this.rbSantaAnita.TabStop = true;
-            this.rbSantaAnita.Text = "Santa Anita";
-            this.rbSantaAnita.UseVisualStyleBackColor = true;
-            this.rbSantaAnita.CheckedChanged += new System.EventHandler(this.rbSantaAnita_CheckedChanged);
             // 
             // label2
             // 
@@ -415,7 +374,7 @@
             this.btnCopiarDatos.AutoSize = true;
             this.btnCopiarDatos.Image = ((System.Drawing.Image)(resources.GetObject("btnCopiarDatos.Image")));
             this.btnCopiarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCopiarDatos.Location = new System.Drawing.Point(522, 44);
+            this.btnCopiarDatos.Location = new System.Drawing.Point(461, 44);
             this.btnCopiarDatos.Name = "btnCopiarDatos";
             this.btnCopiarDatos.Size = new System.Drawing.Size(116, 38);
             this.btnCopiarDatos.TabIndex = 0;
@@ -428,7 +387,7 @@
             // 
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(338, 25);
+            this.btnBuscar.Location = new System.Drawing.Point(277, 25);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(56, 57);
             this.btnBuscar.TabIndex = 0;
@@ -440,7 +399,7 @@
             this.btnLimpiar.AutoSize = true;
             this.btnLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.Image")));
             this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLimpiar.Location = new System.Drawing.Point(400, 44);
+            this.btnLimpiar.Location = new System.Drawing.Point(339, 44);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(116, 38);
             this.btnLimpiar.TabIndex = 0;
@@ -449,118 +408,9 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.dgvListado);
-            this.tabPage1.Controls.Add(this.panel6);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(712, 630);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "ASISTENCIA CALLAO";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // dgvListado
-            // 
-            this.dgvListado.AllowUserToAddRows = false;
-            this.dgvListado.AllowUserToDeleteRows = false;
-            this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.intIdMarcacion,
-            this.strNoUsuario,
-            this.intCoUsuario,
-            this.dttFeMarcacion});
-            this.dgvListado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvListado.Location = new System.Drawing.Point(3, 86);
-            this.dgvListado.Name = "dgvListado";
-            this.dgvListado.ReadOnly = true;
-            this.dgvListado.RowHeadersWidth = 20;
-            this.dgvListado.Size = new System.Drawing.Size(706, 541);
-            this.dgvListado.TabIndex = 10;
-            // 
-            // intIdMarcacion
-            // 
-            this.intIdMarcacion.DataPropertyName = "intIdMarcacion";
-            this.intIdMarcacion.HeaderText = "intIdMarcacion";
-            this.intIdMarcacion.Name = "intIdMarcacion";
-            this.intIdMarcacion.ReadOnly = true;
-            this.intIdMarcacion.Visible = false;
-            this.intIdMarcacion.Width = 60;
-            // 
-            // strNoUsuario
-            // 
-            this.strNoUsuario.DataPropertyName = "strNoUsuario";
-            this.strNoUsuario.HeaderText = "Personal";
-            this.strNoUsuario.Name = "strNoUsuario";
-            this.strNoUsuario.ReadOnly = true;
-            this.strNoUsuario.Width = 320;
-            // 
-            // intCoUsuario
-            // 
-            this.intCoUsuario.DataPropertyName = "intCoUsuario";
-            this.intCoUsuario.HeaderText = "Código Personal";
-            this.intCoUsuario.Name = "intCoUsuario";
-            this.intCoUsuario.ReadOnly = true;
-            this.intCoUsuario.Width = 170;
-            // 
-            // dttFeMarcacion
-            // 
-            this.dttFeMarcacion.DataPropertyName = "dttFeMarcacion";
-            this.dttFeMarcacion.HeaderText = "Hora de Marcación";
-            this.dttFeMarcacion.Name = "dttFeMarcacion";
-            this.dttFeMarcacion.ReadOnly = true;
-            this.dttFeMarcacion.Width = 170;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.btnActualizar);
-            this.panel6.Controls.Add(this.lblHora);
-            this.panel6.Controls.Add(this.lblFecha);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(3, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(706, 83);
-            this.panel6.TabIndex = 11;
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
-            this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActualizar.Location = new System.Drawing.Point(573, 14);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(116, 29);
-            this.btnActualizar.TabIndex = 0;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblHora.Location = new System.Drawing.Point(6, 7);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(150, 31);
-            this.lblHora.TabIndex = 3;
-            this.lblHora.Text = "HH:mm:ss";
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblFecha.Location = new System.Drawing.Point(6, 38);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(149, 29);
-            this.lblFecha.TabIndex = 3;
-            this.lblFecha.Text = "dd/MM/yyyy";
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(10, 10);
@@ -689,6 +539,7 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Visor_StaAnita";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Visor de Marcaciones";
             this.Load += new System.EventHandler(this.Visor_StaAnita_Load);
             this.panel5.ResumeLayout(false);
@@ -700,10 +551,6 @@
             this.binNvgListado.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSantaAnita)).EndInit();
@@ -748,16 +595,6 @@
         private System.Windows.Forms.Button btnCopiarDatos;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.DataGridView dgvListado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn intIdMarcacion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn strNoUsuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn intCoUsuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dttFeMarcacion;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.Label lblHora;
-        private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DataGridView dgvListaSantaAnita;
@@ -769,8 +606,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn strNoUsuario2;
         private System.Windows.Forms.DataGridViewTextBoxColumn intCoUsuario2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dttFeMarcacion2;
-        private System.Windows.Forms.RadioButton rbCallao;
-        private System.Windows.Forms.RadioButton rbSantaAnita;
     }
 }
 

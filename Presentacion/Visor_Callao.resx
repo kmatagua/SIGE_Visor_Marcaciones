@@ -269,36 +269,6 @@
         yEw1ZC2AAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="intIdMarcacion2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="strNoUsuario2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="intCoUsuario2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dttFeMarcacion2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="btnActualizar2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKwSURBVDhPhZPvS1NhFMdvRUYJ9ao3hRmV/QHWG0EZ
-        266/VjAqKQJpSGUmiWSGiWRt80flrzDENHVlKLKNINfcnVdrlk4G6iq1UinLcqEkaWRovvh2nnvv1HxR
-        Xzhcnuec83nOOc9zOQDc/8QXtiPxhgi1SRD5QvcBZVsWA8QViUt8gZsFQGUUpG8sJSkhnMbsRtvwNKo6
-        x5B02wNaWxWXDCBFplt8c3Z/AK2DU3hCwWqzsAxg8KS6flxzjsJJvjO1XmgK3FWSM9iCvqwTac2vEFXS
-        jevOEakKyUGKK2pHbNlz8Hd8ON7wEtaBr9CXdILaCZcARDMWOd4gpXkI2kof6nu/QEunKvlcePQxfUz2
-        g6a44g7o7vYjw/4O5W46xOiyygCTa6Gy6xN0tX4klHZBa3aOrp4BaRNZWHSWpelQZS/0DYOoevFZrlIC
-        UL9mcQJHLcNIKHmGrTsjIqnsBTl3RaHbw3YnlnpwomkExZ5J0MEyQEuAS45xnGoZg5Ztctz6kNBtB+U0
-        WfHF4gb6rNOY2nDaPo4cgdoMAngCGGzjyHZNwFDjZcPZyIKlTEVU0TxVutlQ7UWuGEC6YxK8OQgoEJBi
-        e49zjyeQYxui3lzlSt6y2FCTq3t+m1rfIrU1gLOPPrIKFiWAKrfFffL+a6Q5Aqjtm8GRCnosJqGCBrlX
-        Tuc4gsI+Mg+LfxYXhGkkNw4hKvNejQTYxxti2F1nCFO46plB3cB3XLQP022svAW1sQ353T9g6p5FJgHi
-        b3Yw3w4JQAqJufzQepiuMKvjG4w9c6gfXJCnrEhL/eb7FpHn/YXSvnmcb/TPSQ4FwLRLdaVF1N16ilT7
-        B+T1/PyrgthCN61d0FAlDMyeN1W9tBrAtGe/LjVZlWfzscGyJGWfif2Fay1yLYBpC1kEWTDoH+K4PxJH
-        yEw1ZC2AAAAAAElFTkSuQmCC
-</value>
-  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>64</value>
   </metadata>

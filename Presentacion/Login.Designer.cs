@@ -138,6 +138,7 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnIngresar1);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Visor de Asistencia";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
