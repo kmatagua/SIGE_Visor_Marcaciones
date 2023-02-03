@@ -19,6 +19,8 @@ namespace Presentacion.Clases
             {
                 dt.Columns.Add("Impresora", Type.GetType("System.String"));
                 dt.Columns.Add("RutaFormatos", Type.GetType("System.String"));
+                dt.Columns.Add("RutaMarcacion", Type.GetType("System.String"));
+                dt.Columns.Add("CadenaConexionSIGE", Type.GetType("System.String"));
                 dt.Columns.Add("CadenaConexion", Type.GetType("System.String"));
                 dt.Columns.Add("CadenaConexion2", Type.GetType("System.String"));
                 dt.Columns.Add("ServidorSQL", Type.GetType("System.String"));
@@ -28,9 +30,11 @@ namespace Presentacion.Clases
                 dr = dt.NewRow();
                 dr["Impresora"] = string.Empty;
                 dr["RutaFormatos"] = string.Empty;
+                dr["RutaMarcacion"] = string.Empty;
+                dr["CadenaConexionSIGE"] = Seguridad.Encriptar("Data Source=192.168.1.2; Initial Catalog=BDSIGE; User ID=SOPORTE; Password=SOPORTE;");
                 dr["CadenaConexion"] = Seguridad.Encriptar("Data Source=192.168.25.253; Initial Catalog=Tcx_Servicio; User ID=sa; Password=P@$$w0rd;");
                 dr["CadenaConexion2"] = Seguridad.Encriptar("Data Source=192.168.1.9; Initial Catalog=zkbiotime; User ID=sa; Password=Abc123;");
-                dr["ServidorSQL"] = Seguridad.Encriptar("192.168.1.252");
+                dr["ServidorSQL"] = Seguridad.Encriptar("192.168.1.2");
                 dr["BaseDatosSQL"] = Seguridad.Encriptar("BDSIGE");
                 dr["UsuarioSQL"] = Seguridad.Encriptar("SOPORTE");
                 dr["PasswordSQL"] = Seguridad.Encriptar("SOPORTE");                
@@ -66,6 +70,8 @@ namespace Presentacion.Clases
                 dt = ds.Tables[0];
                 Configuracion.Sistema.Impresora = dt.Rows[0]["Impresora"].ToString();
                 Configuracion.Sistema.RutaFormatos = dt.Rows[0]["RutaFormatos"].ToString();
+                Configuracion.Sistema.RutaMarcacion = dt.Rows[0]["RutaMarcacion"].ToString();
+                Configuracion.Sistema.CadenaConexionSIGE = Seguridad.DesEncriptar(dt.Rows[0]["CadenaConexionSIGE"].ToString());
                 Configuracion.Sistema.CadenaConexion = Seguridad.DesEncriptar(dt.Rows[0]["CadenaConexion"].ToString());
                 Configuracion.Sistema.CadenaConexion2 = Seguridad.DesEncriptar(dt.Rows[0]["CadenaConexion2"].ToString());
                 Configuracion.Sistema.ServidorSQL = Seguridad.DesEncriptar(dt.Rows[0]["ServidorSQL"].ToString());
@@ -99,6 +105,8 @@ namespace Presentacion.Clases
                 ds.ReadXml(cc);
                 ds.Tables[0].Rows[0]["Impresora"] = Configuracion.Sistema.Impresora;
                 ds.Tables[0].Rows[0]["RutaFormatos"] = Configuracion.Sistema.RutaFormatos;
+                ds.Tables[0].Rows[0]["RutaMarcacion"] = Configuracion.Sistema.RutaMarcacion;
+                ds.Tables[0].Rows[0]["CadenaConexionSIGE"] = Seguridad.Encriptar(Configuracion.Sistema.CadenaConexionSIGE);
                 ds.Tables[0].Rows[0]["CadenaConexion"] = Seguridad.Encriptar(Configuracion.Sistema.CadenaConexion);
                 ds.Tables[0].Rows[0]["CadenaConexion2"] = Seguridad.Encriptar(Configuracion.Sistema.CadenaConexion2);
                 ds.Tables[0].Rows[0]["ServidorSQL"] = Seguridad.Encriptar(Configuracion.Sistema.ServidorSQL);

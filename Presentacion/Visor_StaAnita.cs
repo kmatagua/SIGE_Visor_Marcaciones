@@ -10,19 +10,20 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class Visor : Form
+    public partial class Visor_StaAnita : Form
     {
-        int intIdUsu;
+        public int intIdUsu;
         int intIdMarcacion_Max_dtable;
+        int intIdMarcacion_Max_dtable_SA;
 
         BindingSource src = new BindingSource();        
 
-        public Visor()
+        public Visor_StaAnita()
         {
             InitializeComponent();
         }
 
-        private void Visor_Load(object sender, EventArgs e)
+        private void Visor_StaAnita_Load(object sender, EventArgs e)
         {
             string cc = Application.StartupPath.Trim() + "\\" + Configuracion.Sistema.ArchivoCfgXml;
             if (System.IO.File.Exists(cc) == true)
@@ -30,7 +31,7 @@ namespace Presentacion
             else
             { Clases.InicialCls.CrearXml(); Clases.InicialCls.LeerXml(); }
 
-            intIdUsu = 1;            
+            //intIdUsu = 1;            
             Listar_Marcas();
             Listar_MarcasSantaAnita();
 
@@ -92,7 +93,7 @@ namespace Presentacion
             if (!pBlnTodoOk)
             { MessageBox.Show("Hubo un Error al consultar la Base de Datos", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
 
-            intIdMarcacion_Max_dtable = (int)dtable.Compute("max(intIdMarcacion)", "");
+            intIdMarcacion_Max_dtable_SA = (int)dtable.Compute("max(intIdMarcacion)", "");
 
             if (dtable.Rows.Count > 0)
             {
@@ -109,7 +110,7 @@ namespace Presentacion
             DataTable dtable = new DataTable();
 
             Negocio.NGVisor obj = new Negocio.NGVisor(Configuracion.Sistema.CadenaConexion);
-            dtable = obj.Listar_Ultimas_Marcas(intIdUsu, intIdMarcacion_Max_dtable, ref pBlnTodoOk);
+            dtable = obj.Listar_Ultimas_Marcas(intIdUsu, intIdMarcacion_Max_dtable_SA, ref pBlnTodoOk);
             if (!pBlnTodoOk)
             { MessageBox.Show("Hubo un Error al consultar la Base de Datos", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
 
@@ -130,7 +131,7 @@ namespace Presentacion
                                             );
                 }
 
-                intIdMarcacion_Max_dtable = id_Max;
+                intIdMarcacion_Max_dtable_SA = id_Max;
             }
         }
 
@@ -142,7 +143,7 @@ namespace Presentacion
             DataTable dtable = new DataTable();
 
             Negocio.NGVisor obj = new Negocio.NGVisor(Configuracion.Sistema.CadenaConexion2);
-            dtable = obj.Listar_Ultimas_MarcasSantaAnita(intIdUsu, intIdMarcacion_Max_dtable, ref pBlnTodoOk);
+            dtable = obj.Listar_Ultimas_MarcasSantaAnita(intIdUsu, intIdMarcacion_Max_dtable_SA, ref pBlnTodoOk);
             if (!pBlnTodoOk)
             { MessageBox.Show("Hubo un Error al consultar la Base de Datos", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
 
@@ -154,7 +155,7 @@ namespace Presentacion
 
                 foreach (DataRow row in dtable.Rows)
                 {
-                    dgvListado.Rows.Insert(
+                    dgvListaSantaAnita.Rows.Insert(
                                             0,
                                             row["intIdMarcacion2"].ToString(),
                                             row["strNoUsuario2"].ToString(),
@@ -163,7 +164,7 @@ namespace Presentacion
                                             );
                 }
 
-                intIdMarcacion_Max_dtable = id_Max;
+                intIdMarcacion_Max_dtable_SA = id_Max;
             }
         }
 
@@ -185,7 +186,6 @@ namespace Presentacion
 
         public void Agrega_ItemSantaAnita(DataTable tbl)
         {
-
             foreach (DataRow row in tbl.Rows)
             {
                 int rowEscribir = dgvListaSantaAnita.Rows.Count;
@@ -350,5 +350,7 @@ namespace Presentacion
                 rbSantaAnita.Checked = false;
             }
         }
+
+        
     }
 }

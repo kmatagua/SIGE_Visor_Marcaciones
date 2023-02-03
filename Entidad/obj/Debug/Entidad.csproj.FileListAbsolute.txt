@@ -3,3 +3,9 @@ C:\Users\Renzo\Documents\PROYECTOS\VS2017\VisorDeMarcaciones\slnVisorMarcaciones
 C:\Users\Renzo\Documents\PROYECTOS\VS2017\VisorDeMarcaciones\slnVisorMarcaciones\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
 C:\Users\Renzo\Documents\PROYECTOS\VS2017\VisorDeMarcaciones\slnVisorMarcaciones\Entidad\obj\Debug\Entidad.dll
 C:\Users\Renzo\Documents\PROYECTOS\VS2017\VisorDeMarcaciones\slnVisorMarcaciones\Entidad\obj\Debug\Entidad.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Entidad\bin\Debug\Entidad.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Entidad\bin\Debug\Entidad.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Entidad\obj\Debug\Entidad.csprojAssemblyReference.cache
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Entidad\obj\Debug\Entidad.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Entidad\obj\Debug\Entidad.pdb

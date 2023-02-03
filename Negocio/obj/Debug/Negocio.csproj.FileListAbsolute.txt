@@ -24,3 +24,16 @@ C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Negocio\obj\Debug\Negoc
 C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Negocio\obj\Debug\Negocio.dll
 C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\bin\Debug\Negocio.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\bin\Debug\Configuracion.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\bin\Debug\Datos.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\bin\Debug\Entidad.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\bin\Debug\Configuracion.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\bin\Debug\Datos.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\bin\Debug\Entidad.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\obj\Debug\Negocio.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Negocio\obj\Debug\Negocio.pdb

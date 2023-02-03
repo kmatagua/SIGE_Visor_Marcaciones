@@ -20,3 +20,14 @@ C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Datos\obj\Debug\Datos.c
 C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Datos\obj\Debug\Datos.dll
 C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Datos\obj\Debug\Datos.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Datos\bin\Debug\Datos.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Datos\bin\Debug\Datos.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Datos\bin\Debug\Configuracion.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Datos\bin\Debug\Entidad.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Datos\bin\Debug\Configuracion.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Datos\bin\Debug\Entidad.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Datos\obj\Debug\Datos.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Datos\obj\Debug\Datos.pdb

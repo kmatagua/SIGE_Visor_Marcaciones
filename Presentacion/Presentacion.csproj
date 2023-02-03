@@ -64,11 +64,29 @@
     <Compile Include="GeneraTxt_Marcacion\GeneraTxtMarcacion.Designer.cs">
       <DependentUpon>GeneraTxtMarcacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Visor.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Visor.Designer.cs">
-      <DependentUpon>Visor.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_StaAnita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_StaAnita.Designer.cs">
+      <DependentUpon>Visor_StaAnita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Callao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Callao.Designer.cs">
+      <DependentUpon>Visor_Callao.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +95,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GeneraTxt_Marcacion\GeneraTxtMarcacion.resx">
       <DependentUpon>GeneraTxtMarcacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,8 +111,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Visor.resx">
-      <DependentUpon>Visor.cs</DependentUpon>
+    <EmbeddedResource Include="Visor_StaAnita.resx">
+      <DependentUpon>Visor_StaAnita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Callao.resx">
+      <DependentUpon>Visor_Callao.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

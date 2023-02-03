@@ -28,7 +28,9 @@ namespace Configuracion
         private static string _Impresora;
         private static string _RutaFormatos;
         private static string _RutaCarga;
-        private static string _RutaDescarga;
+        private static string _RutaDescarga; 
+        private static string _RutaMarcacion;
+        private static string _CadenaConexionSIGE;
         private static string _CadenaConexion;
         private static string _CadenaConexion2;
         private static string _ServidorSQL;
@@ -60,11 +62,21 @@ namespace Configuracion
             get { return _RutaDescarga; }
             set { _RutaDescarga = value; }
         }
-
+        public static string RutaMarcacion
+        {
+            get { return _RutaMarcacion; }
+            set { _RutaMarcacion = value; }
+        }
         public static string CadenaConexion
         {
             get { return _CadenaConexion; }
             set { _CadenaConexion = value; }
+        }
+
+        public static string CadenaConexionSIGE
+        {
+            get { return _CadenaConexionSIGE; }
+            set { _CadenaConexionSIGE = value; }
         }
 
         public static string CadenaConexion2

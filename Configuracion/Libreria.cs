@@ -5,6 +5,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Net;
 using System.Security.Principal;
+using System.Data;
 
 namespace Configuracion
 {
@@ -185,6 +186,48 @@ namespace Configuracion
             info = "Desktop || Nombre de Equipo: " + NombreEquipo + " || IP: " + localIP + " || Nombre Usuario: " + NombUsuaWIn;
 
             return info;
+        }
+
+        public static void Grabar_Marcacion(DataTable tbl, DateTime dttFecha, string strRuta)
+        {
+            try
+            {
+                string strDirectorio; string strNombreArchivo;
+                strDirectorio = System.IO.Directory.GetCurrentDirectory();
+                if (strDirectorio.EndsWith("\\") == false)
+                {
+                    strDirectorio = (strDirectorio + "\\");
+                }
+
+                strNombreArchivo = (strRuta + "\\" + dttFecha.ToString("yyyyMMdd") + ".txt");
+                string str = string.Empty;
+                System.IO.StreamWriter objWriter; System.IO.FileStream objFile; System.IO.DirectoryInfo objDirectorio;
+                //
+                objDirectorio = new System.IO.DirectoryInfo(ObtenerRutaApp() + "Error\\");
+
+                if (objDirectorio.Exists == false)
+                {
+                    objDirectorio.Create();
+                }
+                objFile = new System.IO.FileStream(strNombreArchivo, System.IO.FileMode.OpenOrCreate, System.IO.FileAccess.Write);
+                objWriter = new System.IO.StreamWriter(objFile);
+                objWriter.BaseStream.Seek(0, System.IO.SeekOrigin.End);
+
+                foreach (DataRow row in tbl.Rows)
+                {
+                    objWriter.WriteLine("03" + row["codigo"].ToString() + "        " + "");
+                    //objWriter.WriteLine("03" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "]");
+                }
+
+                objWriter.WriteLine();
+                objWriter.Flush();
+                objWriter.Close();
+                objFile.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
     }

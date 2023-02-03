@@ -1,0 +1,33 @@
+[________________________________________________________________________]
+[Fecha         ][2023-02-03 12:23:40]
+[Source        ][.Net SqlClient Data Provider]
+[Mensaje       ][Cannot open database "BDSIGE" requested by the login. The login failed.
+Login failed for user 'SOPORTE'.]
+[StackTrace    ][   en Configuracion.SqlServer.ConexionCorrecta(String pStrCadenaConexion) en C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Configuracion\SqlServer.cs:línea 86
+   en Configuracion.Libreria.BaseDato_ConexionCorrecta(String pStrServidor, String pStrBaseDatos, Boolean pBlnSeguridaStandar, String pStrUsuario, String pStrClave, Boolean& pBlnTodoOk, String& pStrError) en C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Configuracion\Libreria.cs:línea 145]
+[InnerException][]
+
+
+
+[________________________________________________________________________]
+[Fecha         ][2023-02-03 12:23:55]
+[Source        ][.Net SqlClient Data Provider]
+[Mensaje       ][Cannot open database "BDSIGE" requested by the login. The login failed.
+Login failed for user 'SOPORTE'.]
+[StackTrace    ][   en Configuracion.SqlServer.ConexionCorrecta(String pStrCadenaConexion) en C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Configuracion\SqlServer.cs:línea 86
+   en Configuracion.Libreria.BaseDato_ConexionCorrecta(String pStrServidor, String pStrBaseDatos, Boolean pBlnSeguridaStandar, String pStrUsuario, String pStrClave, Boolean& pBlnTodoOk, String& pStrError) en C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Configuracion\Libreria.cs:línea 145]
+[InnerException][]
+
+
+
+[________________________________________________________________________]
+[Fecha         ][2023-02-03 12:31:47]
+[Source        ][.Net SqlClient Data Provider]
+[Mensaje       ][Cannot open database "BDSIGE" requested by the login. The login failed.
+Login failed for user 'SOPORTE'.]
+[StackTrace    ][   en Configuracion.SqlServer.ConexionCorrecta(String pStrCadenaConexion) en C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Configuracion\SqlServer.cs:línea 86
+   en Configuracion.Libreria.BaseDato_ConexionCorrecta(String pStrServidor, String pStrBaseDatos, Boolean pBlnSeguridaStandar, String pStrUsuario, String pStrClave, Boolean& pBlnTodoOk, String& pStrError) en C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Configuracion\Libreria.cs:línea 145]
+[InnerException][]
+
+
+
