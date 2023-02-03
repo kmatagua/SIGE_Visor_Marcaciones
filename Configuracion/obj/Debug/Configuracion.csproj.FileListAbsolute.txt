@@ -1,0 +1,12 @@
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\VisorDeMarcaciones\slnVisorMarcaciones\Configuracion\obj\Debug\Configuracion.csprojAssemblyReference.cache
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\VisorDeMarcaciones\slnVisorMarcaciones\Configuracion\obj\Debug\Configuracion.csproj.CoreCompileInputs.cache
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\VisorDeMarcaciones\slnVisorMarcaciones\Configuracion\bin\Debug\Configuracion.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\VisorDeMarcaciones\slnVisorMarcaciones\Configuracion\bin\Debug\Configuracion.pdb
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\VisorDeMarcaciones\slnVisorMarcaciones\Configuracion\obj\Debug\Configuracion.dll
+C:\Users\Renzo\Documents\PROYECTOS\VS2017\VisorDeMarcaciones\slnVisorMarcaciones\Configuracion\obj\Debug\Configuracion.pdb
+C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Configuracion\bin\Debug\Configuracion.dll
+C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Configuracion\bin\Debug\Configuracion.pdb
+C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Configuracion\obj\Debug\Configuracion.csprojAssemblyReference.cache
+C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Configuracion\obj\Debug\Configuracion.csproj.CoreCompileInputs.cache
+C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Configuracion\obj\Debug\Configuracion.dll
+C:\Users\ti89\Documents\Proyectos\SIGE_Visor_Marcaciones\Configuracion\obj\Debug\Configuracion.pdb
