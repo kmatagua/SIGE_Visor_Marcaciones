@@ -37,6 +37,9 @@ namespace Presentacion
                 //this.WindowState = FormWindowState.Normal;
                 //this.Size = siz 679; 236
                 this.Size = new System.Drawing.Size(679, 236);
+
+
+
             }
             else
             {

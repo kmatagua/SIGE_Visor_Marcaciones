@@ -37,10 +37,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnGenerarTxt = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnGenerarTxt = new System.Windows.Forms.Button();
             this.folderBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -124,6 +124,19 @@
             this.panel2.Size = new System.Drawing.Size(615, 54);
             this.panel2.TabIndex = 12;
             // 
+            // btnGenerarTxt
+            // 
+            this.btnGenerarTxt.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerarTxt.Image")));
+            this.btnGenerarTxt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerarTxt.Location = new System.Drawing.Point(190, 6);
+            this.btnGenerarTxt.Name = "btnGenerarTxt";
+            this.btnGenerarTxt.Size = new System.Drawing.Size(100, 36);
+            this.btnGenerarTxt.TabIndex = 11;
+            this.btnGenerarTxt.Text = "Genera txt";
+            this.btnGenerarTxt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGenerarTxt.UseVisualStyleBackColor = true;
+            this.btnGenerarTxt.Click += new System.EventHandler(this.btnGenerarTxt_Click);
+            // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
@@ -147,16 +160,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(595, 10);
             this.panel5.TabIndex = 15;
-            // 
-            // btnGenerarTxt
-            // 
-            this.btnGenerarTxt.Location = new System.Drawing.Point(191, 6);
-            this.btnGenerarTxt.Name = "btnGenerarTxt";
-            this.btnGenerarTxt.Size = new System.Drawing.Size(100, 36);
-            this.btnGenerarTxt.TabIndex = 11;
-            this.btnGenerarTxt.Text = "Genera txt";
-            this.btnGenerarTxt.UseVisualStyleBackColor = true;
-            this.btnGenerarTxt.Click += new System.EventHandler(this.btnGenerarTxt_Click);
             // 
             // GeneraTxtMarcacion
             // 

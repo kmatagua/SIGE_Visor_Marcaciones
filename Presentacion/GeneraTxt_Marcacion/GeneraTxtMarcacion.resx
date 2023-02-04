@@ -130,6 +130,17 @@
         rJzkLzjYZaXLz6U0NJtwl2/C08ybcl7hZW4dK8tZ1qWkDALGfANaow+uqxGYiAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="btnGenerarTxt.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAEYSURBVFhH7ZbREcIgDIY7giPQDRzBERzBUdxAX4qvjuAGdgPdwBH0iu810dADr6UQsPaB7y4P
+        bUL4SXItRWb2iF27ELJZ0+MoonouhVTnziq1JxcPSHAqpWoh8YZeOREHtcJ4bSCiJlc4cPKjnWy8EskE
+        YOnMRO9kVXPHElPI78Byf2+ubUxE9Ay4NtcGrbjhcNISi6gWoHpzscvgZJc+EYmHUNVWMkhOrmngCIie
+        AROWgH+3IAvIArKAtALgI4IJOvP4EyYVwGHyFnyubOpqxrnMp4odPgIQFFHK5mHG9hn+6mmJHyEzgD6X
+        iODNOQyJgINsKSQM3xaY4EmtNXCxJVc4HAGIFhG1OcL5DmjwCj90b8zMiKJ4AaigklWe7bouAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
   <metadata name="folderBrowser.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
