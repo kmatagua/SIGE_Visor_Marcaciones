@@ -30,6 +30,8 @@ namespace Presentacion
             { Clases.InicialCls.LeerXml(); }
             else
             { Clases.InicialCls.CrearXml(); Clases.InicialCls.LeerXml(); }
+            
+            txtRutaArchivoTexto.Text = Configuracion.Sistema.RutaMarcacion;
 
             //intIdUsu = 1;
             Listar_MarcasSantaAnita();
@@ -197,6 +199,67 @@ namespace Presentacion
 
             Listar_MarcasSantaAnita();
         }
-        
+
+        private void btnRutaArchivoTexto_Click(object sender, EventArgs e)
+        {
+            if (folderBrowser.ShowDialog() == DialogResult.OK)
+                txtRutaArchivoTexto.Text = folderBrowser.SelectedPath;
+
+            Configuracion.Sistema.RutaMarcacion = txtRutaArchivoTexto.Text;
+            Clases.InicialCls.ActualizarXml();
+        }
+
+        private void btnGenerarTxt_Click(object sender, EventArgs e)
+        {
+            timer_Marcacion.Enabled = false;
+            Clases.InicialCls.LeerXml();
+            //**************************************************************************************************            
+
+            if (txtRutaArchivoTexto.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("Seleccione una Ruta de Descarga para Archivo de Texto.", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                timer_Marcacion.Enabled = true;
+                return;
+            }
+
+            if (MessageBox.Show("¿Desea Generar la Marcación en un Archivo de Texto?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                timer_Marcacion.Enabled = true;
+                return;
+            } 
+
+            bool pBlnTodoOk = false;
+            DataTable dtable = new DataTable();
+            Negocio.NGVisor obj = new Negocio.NGVisor(Configuracion.Sistema.CadenaConexion2);
+            dtable = obj.Listar_Marcas_GeneraTxt_SantaAnita(intIdUsu, dtpFecha_GeneraTxt.Value, ref pBlnTodoOk);
+            if (!pBlnTodoOk)
+            {
+                MessageBox.Show("Hubo un Error al consultar la Base de Datos", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                timer_Marcacion.Enabled = true;
+                return;
+            }
+            
+            if(dtable.Rows.Count > 0)
+            {
+                dgvListaSantaAnita.DataSource = dtable;
+
+                Clases.Reglas.Grabar_MarcacionTxt_SantaAnita(dtable, dtpFecha_GeneraTxt.Value, txtRutaArchivoTexto.Text, ref pBlnTodoOk);
+                if (!pBlnTodoOk)
+                {
+                    MessageBox.Show("Hubo un Error al Generar el Archivo .txt", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    timer_Marcacion.Enabled = true;
+                    return;
+                }
+            }
+            else
+            {
+                MessageBox.Show("No se encontraron datos para Generar el Archivo .txt", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                timer_Marcacion.Enabled = true;
+                return;
+            }
+
+            MessageBox.Show("Se Generó el Archivo de Texto correctamente.", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            timer_Marcacion.Enabled = true;
+        }
     }
 }

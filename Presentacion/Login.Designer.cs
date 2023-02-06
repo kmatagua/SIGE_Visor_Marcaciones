@@ -105,6 +105,7 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(171, 20);
             this.txtPassword.TabIndex = 9;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // txtUsername
             // 
@@ -123,6 +124,7 @@
             this.btnIngresar1.TabIndex = 15;
             this.btnIngresar1.Text = "button1";
             this.btnIngresar1.UseVisualStyleBackColor = true;
+            this.btnIngresar1.Click += new System.EventHandler(this.btnIngresar1_Click);
             // 
             // Login
             // 
@@ -137,6 +139,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnIngresar1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Visor de Asistencia";

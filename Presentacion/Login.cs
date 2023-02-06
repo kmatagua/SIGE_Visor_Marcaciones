@@ -17,6 +17,8 @@ namespace Presentacion
         public int p_intIdUsu = 0;
         public int intIdUsux;
         public string strNoUsux;
+        public int intPermisoMenu_Sedex;
+
         public int intentos = 0;
         public int p_intPermisoMenu;
 
@@ -84,10 +86,11 @@ namespace Presentacion
             if (p_strMensaje == string.Empty)
             {
                 btnIngresar.DialogResult = DialogResult.OK;
+                
                 intIdUsux = p_intIdUsu;
                 strNoUsux = txtUsername.Text.Trim();
-                //btnIngresar1.PerformClick();                
-
+                intPermisoMenu_Sedex = p_intPermisoMenu;
+                btnIngresar1.PerformClick();
             }
             else
             {
@@ -107,5 +110,18 @@ namespace Presentacion
             Application.Exit();            
         }
 
+        private void btnIngresar1_Click(object sender, EventArgs e)
+        {
+            btnIngresar.DialogResult = DialogResult.OK;
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnIngresar.PerformClick();
+                e.SuppressKeyPress = true; // impide que se pase la pulsación de la tecla Enter al evento KeyPress
+            }
+        }
     }
 }

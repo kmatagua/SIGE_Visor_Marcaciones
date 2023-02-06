@@ -118,6 +118,23 @@ namespace Negocio
             return objRetVal;
         }
 
+        public DataTable Listar_Marcas_GeneraTxt_SantaAnita(int intIdUsu, DateTime dttFecha, ref bool pBlnTodoOk)
+        {
+            Datos.DAVisor objDatos = new Datos.DAVisor(_strConString);
+            System.Data.DataTable objRetVal = new System.Data.DataTable();
+            pBlnTodoOk = false;
+            try
+            {
+                objRetVal = objDatos.Listar_Marcas_GeneraTxt_SantaAnita(intIdUsu, dttFecha, ref pBlnTodoOk);
+            }
+            catch (Exception ex)
+            {
+                pBlnTodoOk = false;
+                Configuracion.Libreria.Error_Grabar(ex);
+            }
+            return objRetVal;
+        }
+
         private bool _disposed;
 
         public void Dispose()

@@ -33,11 +33,13 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnStaAnita = new System.Windows.Forms.Button();
             this.btnCallao = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnSalir);
             this.groupBox1.Controls.Add(this.btnStaAnita);
             this.groupBox1.Controls.Add(this.btnCallao);
@@ -85,6 +87,17 @@
             this.btnCallao.UseVisualStyleBackColor = true;
             this.btnCallao.Click += new System.EventHandler(this.btnCallao_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(515, 139);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 12);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Vs.20230206.1401";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -99,6 +112,7 @@
             this.Text = "VISOR DE ASISTENCIA";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -109,5 +123,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnStaAnita;
         private System.Windows.Forms.Button btnCallao;
+        private System.Windows.Forms.Label label1;
     }
 }

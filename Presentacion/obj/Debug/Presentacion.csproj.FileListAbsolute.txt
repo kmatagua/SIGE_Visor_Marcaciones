@@ -53,7 +53,6 @@ C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Presenta
 C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Presentacion\bin\Debug\Datos.pdb
 C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
 C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Presentacion\obj\Debug\Presentacion.BaseDatos.resources
-C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Presentacion\obj\Debug\Presentacion.GeneraTxt_Marcacion.GeneraTxtMarcacion.resources
 C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
 C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
 C:\Users\Renzo\Documents\PROYECTOS\VS2017\GitHub\SIGE_Visor_Marcaciones\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache

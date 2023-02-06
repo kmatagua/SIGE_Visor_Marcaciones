@@ -158,5 +158,28 @@ namespace Datos
             return tbl;
         }
 
+        public DataTable Listar_Marcas_GeneraTxt_SantaAnita(int intIdUsu, DateTime dttFecha, ref bool pBlnTodoOk)
+        {
+            SqlConnection cn = new SqlConnection(_pStrConString);
+            DataTable tbl = new DataTable();
+            try
+            {
+                cn.Open();
+                SqlDataAdapter da = new SqlDataAdapter("SP_VISOR_Q04", cn);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@intIdUsu", intIdUsu);              
+                da.SelectCommand.Parameters.AddWithValue("@dttFecha", dttFecha);                
+                da.Fill(tbl);                
+                pBlnTodoOk = true;
+            }
+            catch (Exception ex)
+            {
+                Libreria.Error_Grabar(ex);
+                pBlnTodoOk = false;
+            }
+            cn.Close();
+            return tbl;
+        }
+
     }
 }

@@ -64,10 +64,9 @@ namespace Presentacion
             if (!pBlnTodoOk)
             { MessageBox.Show("Hubo un Error al consultar la Base de Datos", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
 
-            intIdMarcacion_Max_dtable = (int)dtable.Compute("max(intIdMarcacion)", "");
-
             if (dtable.Rows.Count > 0)
-            {               
+            {
+                intIdMarcacion_Max_dtable = (int)dtable.Compute("max(intIdMarcacion)", "");
                 Agrega_Item(dtable);
             }
             timer_Marcacion.Enabled = true;

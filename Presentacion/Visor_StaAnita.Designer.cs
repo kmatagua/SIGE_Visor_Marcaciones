@@ -74,6 +74,16 @@
             this.btnActualizar2 = new System.Windows.Forms.Button();
             this.lblHora2 = new System.Windows.Forms.Label();
             this.lblFecha2 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnGenerarTxt = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtpFecha_GeneraTxt = new System.Windows.Forms.DateTimePicker();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtRutaArchivoTexto = new System.Windows.Forms.TextBox();
+            this.btnRutaArchivoTexto = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.folderBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.panel5.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).BeginInit();
@@ -84,6 +94,9 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSantaAnita)).BeginInit();
             this.panel7.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -151,7 +164,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(712, 630);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "REGISTROS";
+            this.tabPage2.Text = "Registros de Asistencia";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // dgvRegistro
@@ -321,9 +334,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(143, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Fecha Inicio";
+            this.label2.Text = "Fecha Fin";
             // 
             // label3
             // 
@@ -374,7 +387,7 @@
             this.btnCopiarDatos.AutoSize = true;
             this.btnCopiarDatos.Image = ((System.Drawing.Image)(resources.GetObject("btnCopiarDatos.Image")));
             this.btnCopiarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCopiarDatos.Location = new System.Drawing.Point(461, 44);
+            this.btnCopiarDatos.Location = new System.Drawing.Point(306, 44);
             this.btnCopiarDatos.Name = "btnCopiarDatos";
             this.btnCopiarDatos.Size = new System.Drawing.Size(116, 38);
             this.btnCopiarDatos.TabIndex = 0;
@@ -387,7 +400,7 @@
             // 
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(277, 25);
+            this.btnBuscar.Location = new System.Drawing.Point(244, 25);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(56, 57);
             this.btnBuscar.TabIndex = 0;
@@ -399,7 +412,7 @@
             this.btnLimpiar.AutoSize = true;
             this.btnLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.Image")));
             this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLimpiar.Location = new System.Drawing.Point(339, 44);
+            this.btnLimpiar.Location = new System.Drawing.Point(428, 44);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(116, 38);
             this.btnLimpiar.TabIndex = 0;
@@ -412,6 +425,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(10, 10);
             this.tabControl1.Name = "tabControl1";
@@ -428,7 +442,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(712, 630);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "ASISTENCIA SANTA ANITA";
+            this.tabPage3.Text = "Asistencia Santa Anita";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dgvListaSantaAnita
@@ -527,6 +541,98 @@
             this.lblFecha2.TabIndex = 3;
             this.lblFecha2.Text = "dd/MM/yyyy";
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(712, 630);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "Generar Txt Asistencia";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnGenerarTxt);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.dtpFecha_GeneraTxt);
+            this.groupBox2.Location = new System.Drawing.Point(26, 105);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(499, 92);
+            this.groupBox2.TabIndex = 16;
+            this.groupBox2.TabStop = false;
+            // 
+            // btnGenerarTxt
+            // 
+            this.btnGenerarTxt.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerarTxt.Image")));
+            this.btnGenerarTxt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerarTxt.Location = new System.Drawing.Point(154, 31);
+            this.btnGenerarTxt.Name = "btnGenerarTxt";
+            this.btnGenerarTxt.Size = new System.Drawing.Size(100, 36);
+            this.btnGenerarTxt.TabIndex = 15;
+            this.btnGenerarTxt.Text = "Genera txt";
+            this.btnGenerarTxt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGenerarTxt.UseVisualStyleBackColor = true;
+            this.btnGenerarTxt.Click += new System.EventHandler(this.btnGenerarTxt_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(17, 31);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(37, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Fecha";
+            // 
+            // dtpFecha_GeneraTxt
+            // 
+            this.dtpFecha_GeneraTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha_GeneraTxt.Location = new System.Drawing.Point(20, 47);
+            this.dtpFecha_GeneraTxt.Name = "dtpFecha_GeneraTxt";
+            this.dtpFecha_GeneraTxt.Size = new System.Drawing.Size(111, 20);
+            this.dtpFecha_GeneraTxt.TabIndex = 14;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtRutaArchivoTexto);
+            this.groupBox1.Controls.Add(this.btnRutaArchivoTexto);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Location = new System.Drawing.Point(26, 16);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(499, 83);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            // 
+            // txtRutaArchivoTexto
+            // 
+            this.txtRutaArchivoTexto.BackColor = System.Drawing.Color.SeaShell;
+            this.txtRutaArchivoTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRutaArchivoTexto.Location = new System.Drawing.Point(17, 40);
+            this.txtRutaArchivoTexto.Name = "txtRutaArchivoTexto";
+            this.txtRutaArchivoTexto.ReadOnly = true;
+            this.txtRutaArchivoTexto.Size = new System.Drawing.Size(389, 21);
+            this.txtRutaArchivoTexto.TabIndex = 8;
+            // 
+            // btnRutaArchivoTexto
+            // 
+            this.btnRutaArchivoTexto.Image = ((System.Drawing.Image)(resources.GetObject("btnRutaArchivoTexto.Image")));
+            this.btnRutaArchivoTexto.Location = new System.Drawing.Point(412, 22);
+            this.btnRutaArchivoTexto.Name = "btnRutaArchivoTexto";
+            this.btnRutaArchivoTexto.Size = new System.Drawing.Size(46, 39);
+            this.btnRutaArchivoTexto.TabIndex = 7;
+            this.btnRutaArchivoTexto.UseVisualStyleBackColor = true;
+            this.btnRutaArchivoTexto.Click += new System.EventHandler(this.btnRutaArchivoTexto_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(14, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(142, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Ruta de Archivos Texto (.txt)";
+            // 
             // Visor_StaAnita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -540,7 +646,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Visor_StaAnita";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Visor de Marcaciones";
+            this.Text = "Visor de Marcaciones - Santa Anita";
             this.Load += new System.EventHandler(this.Visor_StaAnita_Load);
             this.panel5.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -556,6 +662,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSantaAnita)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -606,6 +717,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn strNoUsuario2;
         private System.Windows.Forms.DataGridViewTextBoxColumn intCoUsuario2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dttFeMarcacion2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtRutaArchivoTexto;
+        private System.Windows.Forms.Button btnRutaArchivoTexto;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnGenerarTxt;
+        private System.Windows.Forms.DateTimePicker dtpFecha_GeneraTxt;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowser;
     }
 }
 

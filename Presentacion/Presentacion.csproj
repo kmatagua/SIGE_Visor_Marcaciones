@@ -58,12 +58,6 @@
     <Compile Include="Clases\InicialCls.cs" />
     <Compile Include="Clases\Reglas.cs" />
     <Compile Include="Clases\Seguridad.cs" />
-    <Compile Include="GeneraTxt_Marcacion\GeneraTxtMarcacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GeneraTxt_Marcacion\GeneraTxtMarcacion.Designer.cs">
-      <DependentUpon>GeneraTxtMarcacion.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,9 +86,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BaseDatos.resx">
       <DependentUpon>BaseDatos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GeneraTxt_Marcacion\GeneraTxtMarcacion.resx">
-      <DependentUpon>GeneraTxtMarcacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

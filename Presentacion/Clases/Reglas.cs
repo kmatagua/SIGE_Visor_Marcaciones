@@ -164,5 +164,63 @@ namespace Presentacion.Clases
             return Num2Text;
 
         }
+
+        public static void Grabar_MarcacionTxt_SantaAnita(DataTable tbl, DateTime dttFecha, string strRuta, ref bool pBlnTodoOk)
+        {
+            try
+            {
+                pBlnTodoOk = false;
+
+                string strDirectorio; string strNombreArchivo;
+                strDirectorio = System.IO.Directory.GetCurrentDirectory();
+                if (strDirectorio.EndsWith("\\") == false)
+                {
+                    strDirectorio = (strDirectorio + "\\");
+                }
+
+                strNombreArchivo = (strRuta + "\\" + "Marcas_" + dttFecha.ToString("yyyyMMdd") + ".txt");                
+                System.IO.StreamWriter objWriter;
+                System.IO.FileStream objFile;
+                System.IO.DirectoryInfo objDirectorio;
+
+                objDirectorio = new System.IO.DirectoryInfo(strRuta + "\\");
+
+                if (objDirectorio.Exists == false)
+                {
+                    objDirectorio.Create();
+                }
+                else if(File.Exists(strNombreArchivo))
+                {
+                    File.Delete(strNombreArchivo);
+                }
+
+                objFile = new System.IO.FileStream(strNombreArchivo, System.IO.FileMode.OpenOrCreate, System.IO.FileAccess.Write);
+                objWriter = new System.IO.StreamWriter(objFile);
+                objWriter.BaseStream.Seek(0, System.IO.SeekOrigin.End);
+
+                foreach (DataRow row in tbl.Rows)
+                {
+                    objWriter.WriteLine(
+                                        row["strNoTerminal"].ToString() + 
+                                        row["intCoUsuario"].ToString() + 
+                                        "        " +
+                                        Convert.ToDateTime(row["dttFechaHora"]).ToString("yyyyMMdd HH:mm:ssffffff")
+                                        );
+                    //objWriter.WriteLine("03" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "]");
+                }
+
+                objWriter.WriteLine();
+                objWriter.Flush();
+                objWriter.Close();
+                objFile.Close();
+                pBlnTodoOk = true;
+            }
+            catch (Exception ex)
+            {
+                pBlnTodoOk = false;
+                throw ex;
+            }
+        }
+
     }
 }
